@@ -5,8 +5,9 @@ let result = document.getElementById("result");
 //function to fetch data from api
 
 let getMovie = () => {
+    const APIKey = 'db5ed904';
     let movieName = movieNameRef.value;
-    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=db5ed904`;
+    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=${APIKey}`;
 
     //if input field is empty
 
